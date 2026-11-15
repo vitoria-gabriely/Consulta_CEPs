@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.cps.sp.gov.br/favicon.ico" />
+    <title>Consulta de CEPs</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <script src="/assets/js/scripts.js" defer></script>
+</head>
+
+<body>
+    <main class="card">
+        <header>
+            <div class="logos">
+                <img class="logo-dsm" src="/assets/images/logo_dsm_transparente.png" alt="Logo DSM" />
+                <img class="logo-fatec" src="/assets/images/logo_fatec_transparente.png" alt="Logo Fatec" />
+                <img class="logo-cps" src="/assets/images/logo_cps_transparente.png" alt="Logo CPS" />
+            </div>
+            <h1 class="title">
+                Consulta de CEPs
+            </h1>
+        </header>
+        <section class="course-text">
+            <form id="cep-form" novalidate>
+                <label for="cep">Digite o CEP</label>
+                <p id="cep-help">Use 8 dígitos, com ou sem hífen. Exemplo: 12328-070. Pressione Enter para consultar.</p>
+                <div class="search-row">
+                    <input id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code"
+                        placeholder="12328-070">
+                </div>
+            </form>
+            <p id="mensagem"></p>
+            <div id="resultado" hidden>
+                <div><strong>CEP</strong><span id="valor-cep"></span></div>
+                <div><strong>Logradouro</strong><span id="valor-logradouro"></span></div>
+                <div><strong>Bairro</strong><span id="valor-bairro"></span></div>
+                <div><strong>Cidade</strong><span id="valor-cidade"></span></div>
+                <div><strong>UF</strong><span id="valor-uf"></span></div>
+                <div><strong>Código do IBGE</strong><span id="valor-ibge"></span></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
